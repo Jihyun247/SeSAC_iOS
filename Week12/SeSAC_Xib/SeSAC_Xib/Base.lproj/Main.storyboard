@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeSAC_Xib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDX-yo-rHo" customClass="SquareBoxView" customModule="SeSAC_Xib" customModuleProvider="target">
+                                <rect key="frame" x="16" y="64" width="116.5" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DDX-yo-rHo" secondAttribute="height" multiplier="5:3" id="xiy-5W-Wif"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKw-A0-OOr" customClass="SquareBoxView" customModule="SeSAC_Xib" customModuleProvider="target">
+                                <rect key="frame" x="148.5" y="64" width="117" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xKw-A0-OOr" secondAttribute="height" multiplier="5:3" id="Ex7-A9-u1I"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4D-Fy-i8k" customClass="SquareBoxView" customModule="SeSAC_Xib" customModuleProvider="target">
+                                <rect key="frame" x="281.5" y="64" width="116.5" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U4D-Fy-i8k" secondAttribute="height" multiplier="5:3" id="hky-OY-TcT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8k-pV-ooc">
+                                <rect key="frame" x="174" y="202" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="presentButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhB-k4-IvE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKE-J6-wSS" customClass="MainActivateButton" customModule="SeSAC_Xib" customModuleProvider="target">
+                                <rect key="frame" x="174" y="415" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DDX-yo-rHo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9xb-m2-cAA"/>
+                            <constraint firstItem="U4D-Fy-i8k" firstAttribute="width" secondItem="DDX-yo-rHo" secondAttribute="width" id="ADy-ez-vai"/>
+                            <constraint firstItem="xKw-A0-OOr" firstAttribute="leading" secondItem="DDX-yo-rHo" secondAttribute="trailing" constant="16" id="ChS-Bj-z0T"/>
+                            <constraint firstItem="DDX-yo-rHo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HnP-Jp-DX7"/>
+                            <constraint firstItem="xKw-A0-OOr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LlP-1J-BP7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4D-Fy-i8k" secondAttribute="trailing" constant="16" id="Nd4-lj-Nct"/>
+                            <constraint firstItem="U4D-Fy-i8k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="d4g-68-gtx"/>
+                            <constraint firstItem="xKw-A0-OOr" firstAttribute="width" secondItem="DDX-yo-rHo" secondAttribute="width" id="hIA-WJ-tXO"/>
+                            <constraint firstItem="U4D-Fy-i8k" firstAttribute="leading" secondItem="xKw-A0-OOr" secondAttribute="trailing" constant="16" id="yuB-HC-5oj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteBoxView" destination="DDX-yo-rHo" id="9hW-VE-9Up"/>
+                        <outlet property="presentButton" destination="a8k-pV-ooc" id="1Pe-zb-PVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="mKE-J6-wSS">
+            <size key="intrinsicContentSize" width="67" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

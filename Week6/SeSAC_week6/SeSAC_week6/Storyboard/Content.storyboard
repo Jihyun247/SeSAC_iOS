@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddViewController" id="Y6W-OH-hqX" customClass="AddViewController" customModule="SeSAC_week6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fmb-DF-ALT">
+                                <rect key="frame" x="20" y="663" width="374" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-8X-lXf">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="357.5"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24W-JA-07N">
+                                <rect key="frame" x="20" y="422.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="plq-rE-dxp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-K4-db8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="358.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-SS-BeN">
+                                <rect key="frame" x="20" y="480.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="np3-bO-nT4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="dateButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="veo-K6-hed"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9fg-SS-BeN" secondAttribute="trailing" constant="20" id="0hY-JC-CqT"/>
+                            <constraint firstItem="gzg-8X-lXf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="0je-Ib-1Yv"/>
+                            <constraint firstItem="dLC-K4-db8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1iW-cN-Ivd"/>
+                            <constraint firstItem="fmb-DF-ALT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="70h-Aa-TTZ"/>
+                            <constraint firstItem="gzg-8X-lXf" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="7aA-Dw-k61"/>
+                            <constraint firstItem="dLC-K4-db8" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7cf-ue-Tdb"/>
+                            <constraint firstItem="fmb-DF-ALT" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.2" id="AVS-CX-7tG"/>
+                            <constraint firstItem="dLC-K4-db8" firstAttribute="width" secondItem="gzg-8X-lXf" secondAttribute="width" id="BVo-tT-iQI"/>
+                            <constraint firstItem="24W-JA-07N" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Brz-Rn-Epy"/>
+                            <constraint firstItem="dLC-K4-db8" firstAttribute="height" secondItem="gzg-8X-lXf" secondAttribute="height" id="CeD-We-LAz"/>
+                            <constraint firstItem="9fg-SS-BeN" firstAttribute="top" secondItem="24W-JA-07N" secondAttribute="bottom" constant="8" id="GEA-UO-WQe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gzg-8X-lXf" secondAttribute="trailing" id="Sxa-RJ-bGl"/>
+                            <constraint firstItem="9fg-SS-BeN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="WGS-Bi-bQW"/>
+                            <constraint firstItem="gzg-8X-lXf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XIS-f6-msh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="24W-JA-07N" secondAttribute="trailing" constant="20" id="eJ4-Gr-QKP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fmb-DF-ALT" secondAttribute="bottom" constant="20" id="fgx-tb-dZH"/>
+                            <constraint firstItem="24W-JA-07N" firstAttribute="top" secondItem="gzg-8X-lXf" secondAttribute="bottom" constant="20" id="gwM-sY-Piu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fmb-DF-ALT" secondAttribute="trailing" constant="20" id="qmJ-ZW-bj0"/>
+                            <constraint firstItem="dLC-K4-db8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ugx-rd-FzZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentImageView" destination="gzg-8X-lXf" id="exd-cj-P9q"/>
+                        <outlet property="contentTextView" destination="fmb-DF-ALT" id="prA-aW-HgL"/>
+                        <outlet property="dateButton" destination="9fg-SS-BeN" id="s8y-bE-gyy"/>
+                        <outlet property="imageMenuButton" destination="dLC-K4-db8" id="qKL-a3-dGj"/>
+                        <outlet property="titleTextField" destination="24W-JA-07N" id="fr6-xm-IGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="cBZ-l0-oZc">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerViewController" id="oRw-IY-Oov" customClass="DatePickerViewController" customModule="SeSAC_week6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="awD-ry-x0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="429-c6-4YY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R84-k4-ToT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="429-c6-4YY" firstAttribute="leading" secondItem="R84-k4-ToT" secondAttribute="leading" id="BFg-Pa-R09"/>
+                            <constraint firstItem="R84-k4-ToT" firstAttribute="bottom" secondItem="429-c6-4YY" secondAttribute="bottom" id="UaP-MI-7n4"/>
+                            <constraint firstItem="429-c6-4YY" firstAttribute="trailing" secondItem="R84-k4-ToT" secondAttribute="trailing" id="pzi-fq-ACn"/>
+                            <constraint firstItem="429-c6-4YY" firstAttribute="top" secondItem="R84-k4-ToT" secondAttribute="top" id="tR8-1G-BQp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="429-c6-4YY" id="xpn-EP-Tze"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAX-ru-IEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
