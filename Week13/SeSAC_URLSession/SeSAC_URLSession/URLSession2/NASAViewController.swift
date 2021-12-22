@@ -11,6 +11,9 @@ class NASAViewController: BaseViewController {
     
     let imageView = UIImageView()
     let label = UILabel()
+    
+    var session: URLSession!
+    
     var buffer: Data? {
         didSet {
             let result = buffer?.count ?? 0
@@ -28,6 +31,14 @@ class NASAViewController: BaseViewController {
         configure()
         setupConstraints()
         request()
+    }
+    
+    // 화면 사라질 때 세션 정리
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        //session.invalidateAndCancel() // 리소스 그냥 다 정리 됨. 실행중인 테스크가 있더라도 중단
+        session.finishTasksAndInvalidate() // 실행중인 테스크 모두 끝내고 중단
     }
     
     override func configure() {
@@ -58,10 +69,14 @@ class NASAViewController: BaseViewController {
         print("request start")
         // 클로저 말고 sessiondelegate 쓸 경우 shared x
         //URLSession.shared.dataTask(with: url).resume()
-        let configuration = URLSessionConfiguration.default
-        configuration.allowsCellularAccess = false
-        URLSession(configuration: configuration).dataTask(with: url).resume()
         //URLSession(configuration: .default, delegate: self, delegateQueue: .main).dataTask(with: url).resume()
+        
+//        let configuration = URLSessionConfiguration.default
+//        configuration.allowsCellularAccess = false
+//        URLSession(configuration: configuration).dataTask(with: url).resume()
+        
+        session = URLSession(configuration: .default, delegate: self, delegateQueue: .main)
+        session?.dataTask(with: url).resume()
     }
 }
 

@@ -14,13 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         print(#function)
-        // scene delegate에서 엔트리 씬 지정해주는 방법
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
     
         let vc = NASAViewController()
         window?.rootViewController = vc
-        window?.makeKeyAndVisible() // iOS13 부터 생김, 꼭 호출해야 함
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
