@@ -1,0 +1,27 @@
+//
+//  BaseViewController.swift
+//  SeSAC_URLSession
+//
+//  Created by 김지현 on 2021/12/22.
+//
+
+import UIKit
+import SnapKit
+
+class BaseViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configure()
+        setupConstraints()
+    }
+    
+    func configure() {
+        view.backgroundColor = .white
+    }
+    
+    func setupConstraints() {
+        
+    }
+    
+}
