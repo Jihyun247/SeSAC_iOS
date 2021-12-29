@@ -9,6 +9,7 @@ import Foundation
 
 class LottoViewModel {
     
+    // 초기화 구문
     var lotto1 = Observable(3)
     var lotto2 = Observable(13)
     var lotto3 = Observable(33)

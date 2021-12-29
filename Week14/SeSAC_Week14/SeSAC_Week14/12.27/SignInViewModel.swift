@@ -31,4 +31,8 @@ class SignInViewModel {
 
         }
     }
+    
+    func getUserName() {
+        username.value = UserDefaults.standard.string(forKey: "nickname") ?? ""
+    }
 }

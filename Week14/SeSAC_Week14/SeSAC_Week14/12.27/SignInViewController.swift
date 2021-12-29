@@ -34,6 +34,9 @@ class SignInViewController: UIViewController {
         mainView.signInButton.addTarget(self, action: #selector(passwordTextFieldDidChange(_:)), for: .editingChanged)
         
         mainView.signInButton.addTarget(self, action: #selector(signInButtonClicked), for: .touchUpInside)
+        
+        // 뷰에 정보를 띄우는 역할은 뷰모델이기 때문에 뷰컨에서 바로 nickname을 가져오기 보단 뷰모델에서 함수를 선언한 다음 가져오는 것이 더 구조적이다
+        viewModel.getUserName()
     }
     
     @objc func usernameTextFieldDidChange(_ textField: UITextField) {
