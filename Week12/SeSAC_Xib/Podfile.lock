@@ -9,6 +9,9 @@ PODS:
   - Firebase/Crashlytics (8.9.1):
     - Firebase/CoreOnly
     - FirebaseCrashlytics (~> 8.9.0)
+  - Firebase/Installations (8.9.1):
+    - Firebase/CoreOnly
+    - FirebaseInstallations (~> 8.9.0)
   - Firebase/Messaging (8.9.1):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 8.9.0)
@@ -113,6 +116,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Crashlytics
+  - Firebase/Installations
   - Firebase/Messaging
 
 SPEC REPOS:
@@ -144,6 +148,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 6c57eee6b0df7fdb72a54f89567519b36b3cb3c7
+PODFILE CHECKSUM: 35a97266f96ccb878cb294277c08300ca4ecbbb5
 
 COCOAPODS: 1.11.2

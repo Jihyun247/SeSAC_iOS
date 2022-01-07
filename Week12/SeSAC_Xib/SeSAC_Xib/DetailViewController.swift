@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseInstallations
 
 class DetailViewController: UIViewController {
     
@@ -30,6 +31,18 @@ class DetailViewController: UIViewController {
         setTitleLabelConstraints()
         setSubTitleLabelConstraints()
         setActivateButtonConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        Installations.installations().delete { error in
+            if let error = error {
+                print("Error deleting installation: \(error)")
+                return
+            }
+            print("Installation deleted")
+        }
     }
     
     func setActivateButtonConstraints() {

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeSAC_Beer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSH-kD-874">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27n-wm-qNE">
+                                        <rect key="frame" x="20" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="27n-wm-qNE" secondAttribute="height" id="eGB-p4-55S"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXR-bZ-uqk">
+                                        <rect key="frame" x="120" y="10" width="274" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nXR-bZ-uqk" secondAttribute="trailing" constant="20" id="0JS-cy-g8p"/>
+                                    <constraint firstItem="nXR-bZ-uqk" firstAttribute="centerY" secondItem="27n-wm-qNE" secondAttribute="centerY" id="Q8w-UK-uN6"/>
+                                    <constraint firstItem="27n-wm-qNE" firstAttribute="leading" secondItem="iSH-kD-874" secondAttribute="leading" constant="20" id="Qkm-dC-NNR"/>
+                                    <constraint firstItem="nXR-bZ-uqk" firstAttribute="height" secondItem="27n-wm-qNE" secondAttribute="height" id="WEg-oo-6BV"/>
+                                    <constraint firstAttribute="height" constant="100" id="a02-ex-3Ox"/>
+                                    <constraint firstItem="27n-wm-qNE" firstAttribute="height" secondItem="iSH-kD-874" secondAttribute="height" multiplier="0.8" id="l49-bf-DGP"/>
+                                    <constraint firstItem="27n-wm-qNE" firstAttribute="centerY" secondItem="iSH-kD-874" secondAttribute="centerY" id="lfF-uR-Peg"/>
+                                    <constraint firstItem="nXR-bZ-uqk" firstAttribute="leading" secondItem="27n-wm-qNE" secondAttribute="trailing" constant="20" id="nAk-hM-7ME"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iSH-kD-874" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5rs-QC-0Vm"/>
+                            <constraint firstItem="iSH-kD-874" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hdl-1y-3ei"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iSH-kD-874" secondAttribute="trailing" id="fPt-pr-X2c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="19"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

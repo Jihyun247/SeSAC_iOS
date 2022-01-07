@@ -127,6 +127,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     // 포그라운드 수신 : willPresent
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        
+        
         completionHandler([.list, .banner, .badge, .sound])
         // iOS14부터 .alert -> .list, .banner
     }
@@ -139,11 +142,23 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         //print(response.notification.request.content.body)
         
         let userInfo = response.notification.request.content.userInfo
+        
+        // SceneDelegate Window 객체 가져오기
+        guard let rootViewController = (UIApplication.shared.connectedScenes.first?.delegate as?
+                                        SceneDelegate)?.window?.rootViewController?.topViewController else {return}
+        print("rootview : ", rootViewController)
+        
+        if rootViewController is SnapDetailViewController {
+            rootViewController.present(DetailViewController(), animated: true, completion: nil)
+        }
+        
         if userInfo[AnyHashable("key")] as? Int == 1 {
             print("광고 푸시 입니다")
         } else {
             print("다른 푸시 입니다")
         }
+        
+        completionHandler()
     }
 }
 
@@ -161,6 +176,36 @@ extension AppDelegate: MessagingDelegate {
       )
       // TODO: If necessary send token to application server.
       // Note: This callback is fired at each app startup and whenever a new token is generated.
+    }
+}
+
+// 최상단 뷰컨트롤러를 판단해주는 UIViewController Extension
+extension UIViewController {
+    
+    var topViewController: UIViewController? { // 헐 대박
+        return self.topViewController(currentViewController: self)
+    }
+    
+    // currentViewController: TabBarController
+    func topViewController(currentViewController: UIViewController) -> UIViewController {
+        
+        if let tabBarController = currentViewController as? UITabBarController,
+           let selectedViewController = tabBarController.selectedViewController {
+            
+            return self.topViewController(currentViewController: selectedViewController)
+            
+        } else if let navigationController = currentViewController as? UINavigationController,
+                   let visibleViewController = navigationController.visibleViewController {
+            
+                       return self.topViewController(currentViewController: visibleViewController)
+            
+        } else if let presentedViewController = currentViewController.presentedViewController {
+            
+            return self.topViewController(currentViewController: presentedViewController)
+            
+        } else {
+            return currentViewController
+        }
     }
 }
 

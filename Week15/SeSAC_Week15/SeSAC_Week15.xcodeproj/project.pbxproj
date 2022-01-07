@@ -10,6 +10,8 @@
 		B80E2D972783D4AC00F3F8BD /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E2D962783D4AC00F3F8BD /* SubjectViewController.swift */; };
 		B80E2D992783E49800F3F8BD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E2D982783E49700F3F8BD /* Networking.swift */; };
 		B80E2D9C2783E98100F3F8BD /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B80E2D9B2783E98100F3F8BD /* RxAlamofire */; };
+		B82E55CC27851FCC0007A4CB /* ReactiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E55CB27851FCC0007A4CB /* ReactiveViewController.swift */; };
+		B82E55CF27853CE80007A4CB /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82E55CE27853CE80007A4CB /* ValidationViewController.swift */; };
 		B847C98D2782875B00892FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847C98C2782875B00892FAB /* AppDelegate.swift */; };
 		B847C98F2782875B00892FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847C98E2782875B00892FAB /* SceneDelegate.swift */; };
 		B847C9912782875B00892FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847C9902782875B00892FAB /* ViewController.swift */; };
@@ -23,11 +25,16 @@
 		B847C9AC27828CAA00892FAB /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847C9AB27828CAA00892FAB /* PickerViewController.swift */; };
 		B847C9AE2782965400892FAB /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847C9AD2782965400892FAB /* Operator.swift */; };
 		B847C9B027829BA500892FAB /* GradeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847C9AF27829BA500892FAB /* GradeCalculator.swift */; };
+		B86166D227866E57004094D2 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86166D127866E57004094D2 /* ButtonViewController.swift */; };
+		B86166D427866F7C004094D2 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86166D327866F7C004094D2 /* ButtonViewModel.swift */; };
+		B886A4A72787D27C00D35674 /* InAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886A4A62787D27C00D35674 /* InAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B80E2D962783D4AC00F3F8BD /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		B80E2D982783E49700F3F8BD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		B82E55CB27851FCC0007A4CB /* ReactiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveViewController.swift; sourceTree = "<group>"; };
+		B82E55CE27853CE80007A4CB /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
 		B847C9892782875B00892FAB /* SeSAC_Week15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_Week15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B847C98C2782875B00892FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B847C98E2782875B00892FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +47,9 @@
 		B847C9AB27828CAA00892FAB /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		B847C9AD2782965400892FAB /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		B847C9AF27829BA500892FAB /* GradeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculator.swift; sourceTree = "<group>"; };
+		B86166D127866E57004094D2 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		B86166D327866F7C004094D2 /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
+		B886A4A62787D27C00D35674 /* InAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82E55CD278537000007A4CB /* 1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				B82E55CB27851FCC0007A4CB /* ReactiveViewController.swift */,
+				B82E55CE27853CE80007A4CB /* ValidationViewController.swift */,
+			);
+			path = 1.5;
+			sourceTree = "<group>";
+		};
 		B847C9802782875B00892FAB = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +95,9 @@
 		B847C98B2782875B00892FAB /* SeSAC_Week15 */ = {
 			isa = PBXGroup;
 			children = (
+				B886A4A52787D26F00D35674 /* 1.7 */,
+				B86166D027866E4C004094D2 /* 1.6 */,
+				B82E55CD278537000007A4CB /* 1.5 */,
 				B847C98C2782875B00892FAB /* AppDelegate.swift */,
 				B847C98E2782875B00892FAB /* SceneDelegate.swift */,
 				B847C9902782875B00892FAB /* ViewController.swift */,
@@ -91,6 +113,23 @@
 				B80E2D982783E49700F3F8BD /* Networking.swift */,
 			);
 			path = SeSAC_Week15;
+			sourceTree = "<group>";
+		};
+		B86166D027866E4C004094D2 /* 1.6 */ = {
+			isa = PBXGroup;
+			children = (
+				B86166D127866E57004094D2 /* ButtonViewController.swift */,
+				B86166D327866F7C004094D2 /* ButtonViewModel.swift */,
+			);
+			path = 1.6;
+			sourceTree = "<group>";
+		};
+		B886A4A52787D26F00D35674 /* 1.7 */ = {
+			isa = PBXGroup;
+			children = (
+				B886A4A62787D27C00D35674 /* InAppViewController.swift */,
+			);
+			path = 1.7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,10 +217,15 @@
 				B847C9B027829BA500892FAB /* GradeCalculator.swift in Sources */,
 				B847C9AC27828CAA00892FAB /* PickerViewController.swift in Sources */,
 				B847C9AE2782965400892FAB /* Operator.swift in Sources */,
+				B82E55CC27851FCC0007A4CB /* ReactiveViewController.swift in Sources */,
+				B86166D227866E57004094D2 /* ButtonViewController.swift in Sources */,
+				B886A4A72787D27C00D35674 /* InAppViewController.swift in Sources */,
 				B80E2D992783E49800F3F8BD /* Networking.swift in Sources */,
 				B847C9912782875B00892FAB /* ViewController.swift in Sources */,
+				B86166D427866F7C004094D2 /* ButtonViewModel.swift in Sources */,
 				B847C9972782875B00892FAB /* SeSAC_Week15.xcdatamodeld in Sources */,
 				B80E2D972783D4AC00F3F8BD /* SubjectViewController.swift in Sources */,
+				B82E55CF27853CE80007A4CB /* ValidationViewController.swift in Sources */,
 				B847C98D2782875B00892FAB /* AppDelegate.swift in Sources */,
 				B847C98F2782875B00892FAB /* SceneDelegate.swift in Sources */,
 			);
@@ -344,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jihyeon.SeSAC-Week15";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jihyeon.OOD-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -371,7 +415,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jihyeon.SeSAC-Week15";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jihyeon.OOD-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

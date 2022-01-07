@@ -16,7 +16,7 @@ class NASAViewController: BaseViewController {
     
     var buffer: Data? {
         didSet {
-            let result = buffer?.count ?? 0
+            let result = Double(buffer?.count ?? 0)
             label.text = "\(result * 100)/100"
         }
     }
@@ -94,7 +94,8 @@ extension NASAViewController: URLSessionDataDelegate {
     
     // 서버에서 데이터를 받을 때마다 반복적으로 호출됨
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        print(data)
+        // print(data)
+        buffer?.append(data)
     }
     
     // 응답 완료 되었을 때

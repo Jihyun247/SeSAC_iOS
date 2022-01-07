@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B810456A2773FECC0038E0FC /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81045692773FECC0038E0FC /* Test.swift */; };
+		B81045742774043E0038E0FC /* FrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81045732774043E0038E0FC /* FrameworkViewController.swift */; };
+		B8234018277549220026EB7C /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8234017277549220026EB7C /* TempViewController.swift */; };
 		B8919A64277155A100996AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8919A63277155A100996AEC /* AppDelegate.swift */; };
 		B8919A66277155A100996AEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8919A65277155A100996AEC /* SceneDelegate.swift */; };
 		B8919A68277155A100996AEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8919A67277155A100996AEC /* ViewController.swift */; };
@@ -26,9 +29,44 @@
 		B8BD294B2772A92000D75E78 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD294A2772A92000D75E78 /* SignupViewController.swift */; };
 		B8BD294F2772A9AE00D75E78 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD294E2772A9AE00D75E78 /* SignupView.swift */; };
 		B8BD29522772BF8200D75E78 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8BD29512772BF8200D75E78 /* Alamofire */; };
+		B8BD29542772C6DF00D75E78 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BD29532772C6DF00D75E78 /* SignupViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B8C4095C27748094001C173F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B810455B2773FCF30038E0FC /* SeSAC_Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B810453F2773FB4C0038E0FC;
+			remoteInfo = SeSAC_Framework;
+		};
+		B8C4095E27748094001C173F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B810455B2773FCF30038E0FC /* SeSAC_Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B81045492773FB4C0038E0FC;
+			remoteInfo = SeSAC_FrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B81045672773FDBB0038E0FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B810455B2773FCF30038E0FC /* SeSAC_Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeSAC_Framework.xcodeproj; path = ../SeSAC_Framework/SeSAC_Framework.xcodeproj; sourceTree = "<group>"; };
+		B81045692773FECC0038E0FC /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B81045732774043E0038E0FC /* FrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewController.swift; sourceTree = "<group>"; };
+		B8234017277549220026EB7C /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		B8919A60277155A100996AEC /* SeSAC_URLSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_URLSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8919A63277155A100996AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8919A65277155A100996AEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +86,7 @@
 		B8BD29482772A77300D75E78 /* NASAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAViewController.swift; sourceTree = "<group>"; };
 		B8BD294A2772A92000D75E78 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		B8BD294E2772A9AE00D75E78 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		B8BD29532772C6DF00D75E78 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +102,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B81045642773FDBB0038E0FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81045682773FEB70038E0FC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				B81045692773FECC0038E0FC /* Test.swift */,
+				B81045732774043E0038E0FC /* FrameworkViewController.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		B82340142775490F0026EB7C /* 1224Friday */ = {
+			isa = PBXGroup;
+			children = (
+				B8234017277549220026EB7C /* TempViewController.swift */,
+			);
+			path = 1224Friday;
+			sourceTree = "<group>";
+		};
 		B8919A57277155A100996AEC = {
 			isa = PBXGroup;
 			children = (
+				B810455B2773FCF30038E0FC /* SeSAC_Framework.xcodeproj */,
 				B8919A62277155A100996AEC /* SeSAC_URLSession */,
 				B8919A61277155A100996AEC /* Products */,
+				B81045642773FDBB0038E0FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +147,8 @@
 		B8919A62277155A100996AEC /* SeSAC_URLSession */ = {
 			isa = PBXGroup;
 			children = (
+				B82340142775490F0026EB7C /* 1224Friday */,
+				B81045682773FEB70038E0FC /* Framework */,
 				B8BD29462772A5C500D75E78 /* AppDelegate */,
 				B8BD29452772A59F00D75E78 /* URLSession1 */,
 				B8BD29472772A5F500D75E78 /* URLSession2 */,
@@ -123,9 +190,19 @@
 				B8BD29432772A59800D75E78 /* BaseViewController.swift */,
 				B8BD29482772A77300D75E78 /* NASAViewController.swift */,
 				B8BD294A2772A92000D75E78 /* SignupViewController.swift */,
+				B8BD29532772C6DF00D75E78 /* SignupViewModel.swift */,
 				B8BD294E2772A9AE00D75E78 /* SignupView.swift */,
 			);
 			path = URLSession2;
+			sourceTree = "<group>";
+		};
+		B8C4095827748094001C173F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4095D27748094001C173F /* SeSAC_Framework.framework */,
+				B8C4095F27748094001C173F /* SeSAC_FrameworkTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +215,7 @@
 				B8919A5C277155A100996AEC /* Sources */,
 				B8919A5D277155A100996AEC /* Frameworks */,
 				B8919A5E277155A100996AEC /* Resources */,
+				B81045672773FDBB0038E0FC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,12 +260,35 @@
 			);
 			productRefGroup = B8919A61277155A100996AEC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B8C4095827748094001C173F /* Products */;
+					ProjectRef = B810455B2773FCF30038E0FC /* SeSAC_Framework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B8919A5F277155A100996AEC /* SeSAC_URLSession */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B8C4095D27748094001C173F /* SeSAC_Framework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SeSAC_Framework.framework;
+			remoteRef = B8C4095C27748094001C173F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8C4095F27748094001C173F /* SeSAC_FrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SeSAC_FrameworkTests.xctest;
+			remoteRef = B8C4095E27748094001C173F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B8919A5E277155A100996AEC /* Resources */ = {
@@ -212,12 +313,16 @@
 				B8BD29492772A77300D75E78 /* NASAViewController.swift in Sources */,
 				B8919A68277155A100996AEC /* ViewController.swift in Sources */,
 				B8BD29442772A59800D75E78 /* BaseViewController.swift in Sources */,
+				B810456A2773FECC0038E0FC /* Test.swift in Sources */,
 				B8919A8A277178B900996AEC /* TableViewCellRepresentable.swift in Sources */,
+				B8BD29542772C6DF00D75E78 /* SignupViewModel.swift in Sources */,
 				B8919A7E27715BD500996AEC /* APIService.swift in Sources */,
 				B8919A882771772500996AEC /* DummyData.swift in Sources */,
 				B8919A64277155A100996AEC /* AppDelegate.swift in Sources */,
+				B81045742774043E0038E0FC /* FrameworkViewController.swift in Sources */,
 				B8919A6E277155A100996AEC /* SeSAC_URLSession.xcdatamodeld in Sources */,
 				B8BD294B2772A92000D75E78 /* SignupViewController.swift in Sources */,
+				B8234018277549220026EB7C /* TempViewController.swift in Sources */,
 				B8919A802771677100996AEC /* Cast.swift in Sources */,
 				B8919A66277155A100996AEC /* SceneDelegate.swift in Sources */,
 				B8919A862771762F00996AEC /* DummyViewController.swift in Sources */,
