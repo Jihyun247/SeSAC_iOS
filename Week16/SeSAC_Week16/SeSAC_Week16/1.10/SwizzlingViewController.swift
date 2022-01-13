@@ -18,6 +18,8 @@ class SwizzlingViewController: UIViewController {
         super.viewWillAppear(animated)
         
         print("viewWillAppear")
+        
+        print("www.naver.com/news?title=안녕") // 아스키코드 외의 문자가 포함될 수 있음
     }
 }
 

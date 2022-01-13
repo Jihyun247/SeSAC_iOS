@@ -16,6 +16,11 @@
 		B8279D86278BB20700F5D4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8279D84278BB20700F5D4ED /* LaunchScreen.storyboard */; };
 		B8279D8E278BD29800F5D4ED /* SwizzlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8279D8D278BD29800F5D4ED /* SwizzlingViewController.swift */; };
 		B8528B8F278E5C430043A8E3 /* ConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8528B8E278E5C430043A8E3 /* ConcurrencyViewController.swift */; };
+		B8E653D5278FA84500E1B222 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E653D4278FA84500E1B222 /* ButtonViewController.swift */; };
+		B8E653D8278FA86C00E1B222 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B8E653D7278FA86C00E1B222 /* SnapKit */; };
+		B8E653DA278FAE1B00E1B222 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E653D9278FAE1B00E1B222 /* DetailViewController.swift */; };
+		B8E653DC278FB6EE00E1B222 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E653DB278FB6EE00E1B222 /* ChatViewController.swift */; };
+		B8E653DE278FC89F00E1B222 /* ABIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E653DD278FC89F00E1B222 /* ABIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,10 @@
 		B8279D87278BB20700F5D4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8279D8D278BD29800F5D4ED /* SwizzlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzlingViewController.swift; sourceTree = "<group>"; };
 		B8528B8E278E5C430043A8E3 /* ConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyViewController.swift; sourceTree = "<group>"; };
+		B8E653D4278FA84500E1B222 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		B8E653D9278FAE1B00E1B222 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B8E653DB278FB6EE00E1B222 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B8E653DD278FC89F00E1B222 /* ABIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E653D8278FA86C00E1B222 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,7 @@
 		B8279D75278BB20700F5D4ED /* SeSAC_Week16 */ = {
 			isa = PBXGroup;
 			children = (
+				B8E653D3278FA83A00E1B222 /* 1.13 */,
 				B8528B8D278E5C320043A8E3 /* 1.12 */,
 				B8279D8F278BD29C00F5D4ED /* 1.10 */,
 				B8279D78278BB20700F5D4ED /* SceneDelegate.swift */,
@@ -92,6 +103,17 @@
 			path = 1.12;
 			sourceTree = "<group>";
 		};
+		B8E653D3278FA83A00E1B222 /* 1.13 */ = {
+			isa = PBXGroup;
+			children = (
+				B8E653D4278FA84500E1B222 /* ButtonViewController.swift */,
+				B8E653D9278FAE1B00E1B222 /* DetailViewController.swift */,
+				B8E653DB278FB6EE00E1B222 /* ChatViewController.swift */,
+				B8E653DD278FC89F00E1B222 /* ABIViewController.swift */,
+			);
+			path = 1.13;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +130,9 @@
 			dependencies = (
 			);
 			name = SeSAC_Week16;
+			packageProductDependencies = (
+				B8E653D7278FA86C00E1B222 /* SnapKit */,
+			);
 			productName = SeSAC_Week16;
 			productReference = B8279D73278BB20700F5D4ED /* SeSAC_Week16.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +161,9 @@
 				Base,
 			);
 			mainGroup = B8279D6A278BB20700F5D4ED;
+			packageReferences = (
+				B8E653D6278FA86C00E1B222 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = B8279D74278BB20700F5D4ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,11 +192,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8279D7B278BB20700F5D4ED /* ViewController.swift in Sources */,
+				B8E653DE278FC89F00E1B222 /* ABIViewController.swift in Sources */,
+				B8E653D5278FA84500E1B222 /* ButtonViewController.swift in Sources */,
 				B8279D77278BB20700F5D4ED /* AppDelegate.swift in Sources */,
 				B8279D81278BB20700F5D4ED /* SeSAC_Week16.xcdatamodeld in Sources */,
 				B8279D79278BB20700F5D4ED /* SceneDelegate.swift in Sources */,
 				B8528B8F278E5C430043A8E3 /* ConcurrencyViewController.swift in Sources */,
 				B8279D8E278BD29800F5D4ED /* SwizzlingViewController.swift in Sources */,
+				B8E653DC278FB6EE00E1B222 /* ChatViewController.swift in Sources */,
+				B8E653DA278FAE1B00E1B222 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8E653D6278FA86C00E1B222 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8E653D7278FA86C00E1B222 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E653D6278FA86C00E1B222 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B8279D7F278BB20700F5D4ED /* SeSAC_Week16.xcdatamodeld */ = {

@@ -9,7 +9,9 @@ import UIKit
 
 class ConcurrencyViewController: UIViewController {
     
-    let url1, url2, url3: URL?
+    var url1: URL?
+    var url2: URL?
+    var url3: URL?
     
     @IBOutlet weak var image1: UIImageView!
     
