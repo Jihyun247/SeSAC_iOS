@@ -16,6 +16,9 @@
 		B8279D86278BB20700F5D4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8279D84278BB20700F5D4ED /* LaunchScreen.storyboard */; };
 		B8279D8E278BD29800F5D4ED /* SwizzlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8279D8D278BD29800F5D4ED /* SwizzlingViewController.swift */; };
 		B8528B8F278E5C430043A8E3 /* ConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8528B8E278E5C430043A8E3 /* ConcurrencyViewController.swift */; };
+		B860E1C12790F9960068ACD1 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = B860E1C02790F9960068ACD1 /* SocketIO */; };
+		B860E1C42790F9AF0068ACD1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B860E1C32790F9AF0068ACD1 /* Alamofire */; };
+		B860E1C62791070A0068ACD1 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860E1C52791070A0068ACD1 /* SocketManager.swift */; };
 		B8E653D5278FA84500E1B222 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E653D4278FA84500E1B222 /* ButtonViewController.swift */; };
 		B8E653D8278FA86C00E1B222 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B8E653D7278FA86C00E1B222 /* SnapKit */; };
 		B8E653DA278FAE1B00E1B222 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E653D9278FAE1B00E1B222 /* DetailViewController.swift */; };
@@ -35,6 +38,7 @@
 		B8279D87278BB20700F5D4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8279D8D278BD29800F5D4ED /* SwizzlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzlingViewController.swift; sourceTree = "<group>"; };
 		B8528B8E278E5C430043A8E3 /* ConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyViewController.swift; sourceTree = "<group>"; };
+		B860E1C52791070A0068ACD1 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		B8E653D4278FA84500E1B222 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		B8E653D9278FAE1B00E1B222 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B8E653DB278FB6EE00E1B222 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B860E1C42790F9AF0068ACD1 /* Alamofire in Frameworks */,
 				B8E653D8278FA86C00E1B222 /* SnapKit in Frameworks */,
+				B860E1C12790F9960068ACD1 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,7 @@
 		B8279D75278BB20700F5D4ED /* SeSAC_Week16 */ = {
 			isa = PBXGroup;
 			children = (
+				B860E1C72791070E0068ACD1 /* 1.14 */,
 				B8E653D3278FA83A00E1B222 /* 1.13 */,
 				B8528B8D278E5C320043A8E3 /* 1.12 */,
 				B8279D8F278BD29C00F5D4ED /* 1.10 */,
@@ -103,6 +110,14 @@
 			path = 1.12;
 			sourceTree = "<group>";
 		};
+		B860E1C72791070E0068ACD1 /* 1.14 */ = {
+			isa = PBXGroup;
+			children = (
+				B860E1C52791070A0068ACD1 /* SocketManager.swift */,
+			);
+			path = 1.14;
+			sourceTree = "<group>";
+		};
 		B8E653D3278FA83A00E1B222 /* 1.13 */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +147,8 @@
 			name = SeSAC_Week16;
 			packageProductDependencies = (
 				B8E653D7278FA86C00E1B222 /* SnapKit */,
+				B860E1C02790F9960068ACD1 /* SocketIO */,
+				B860E1C32790F9AF0068ACD1 /* Alamofire */,
 			);
 			productName = SeSAC_Week16;
 			productReference = B8279D73278BB20700F5D4ED /* SeSAC_Week16.app */;
@@ -163,6 +180,8 @@
 			mainGroup = B8279D6A278BB20700F5D4ED;
 			packageReferences = (
 				B8E653D6278FA86C00E1B222 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B860E1BF2790F9960068ACD1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				B860E1C22790F9AF0068ACD1 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B8279D74278BB20700F5D4ED /* Products */;
 			projectDirPath = "";
@@ -195,6 +214,7 @@
 				B8E653DE278FC89F00E1B222 /* ABIViewController.swift in Sources */,
 				B8E653D5278FA84500E1B222 /* ButtonViewController.swift in Sources */,
 				B8279D77278BB20700F5D4ED /* AppDelegate.swift in Sources */,
+				B860E1C62791070A0068ACD1 /* SocketManager.swift in Sources */,
 				B8279D81278BB20700F5D4ED /* SeSAC_Week16.xcdatamodeld in Sources */,
 				B8279D79278BB20700F5D4ED /* SceneDelegate.swift in Sources */,
 				B8528B8F278E5C430043A8E3 /* ConcurrencyViewController.swift in Sources */,
@@ -422,6 +442,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B860E1BF2790F9960068ACD1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 16.0.1;
+			};
+		};
+		B860E1C22790F9AF0068ACD1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		B8E653D6278FA86C00E1B222 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -433,6 +469,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B860E1C02790F9960068ACD1 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B860E1BF2790F9960068ACD1 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+		B860E1C32790F9AF0068ACD1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B860E1C22790F9AF0068ACD1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		B8E653D7278FA86C00E1B222 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B8E653D6278FA86C00E1B222 /* XCRemoteSwiftPackageReference "SnapKit" */;

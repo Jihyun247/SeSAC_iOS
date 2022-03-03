@@ -39,7 +39,7 @@ class LoginViewControllerTests: XCTestCase {
         // Given, Arrange
         sut.idTextField.text = "wlgus@naver.com"
         // When, Act
-        let valid = sut.isValidID()
+        let valid = sut.validator.isValidID(id: sut.idTextField.text!)
         // Then, Assert
         XCTAssertTrue(valid, "@가 없거나 6글자 미만이라 안될 수 있다")
     }
@@ -48,7 +48,7 @@ class LoginViewControllerTests: XCTestCase {
         
         sut.pwdTextField.text = "1234"
         
-        let valid = sut.isValidPassword()
+        let valid = sut.validator.isValidPassword(password: sut.pwdTextField.text!)
         
         XCTAssertFalse(valid, "패스워드 로직 확인")
     }

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-print("Hello") // 출력 당연히 안됨 함수, 클래스와 같이 쌓여있지 않은 것을 Top - level 이라고 함
+//print("Hello") // 출력 당연히 안됨 함수, 클래스와 같이 쌓여있지 않은 것을 Top - level 이라고 함
 
 class ButtonViewController: UIViewController, UIColorPickerViewControllerDelegate {
     
@@ -26,7 +26,7 @@ class ButtonViewController: UIViewController, UIColorPickerViewControllerDelegat
     //            }
             }
             button.configuration = .jhStyle()
-            button.addTarget(self, action: #selector(buttonClicked2), for: .touchUpInside)
+            button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
             view.addSubview(button)
         }
     }
@@ -104,9 +104,10 @@ class ButtonViewController: UIViewController, UIColorPickerViewControllerDelegat
     
     @objc func buttonClicked() {
         
-        let vc = DetailViewController()
+        //let vc = DetailViewController()
 
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(ChatViewController(), animated: true)
+        //self.present(vc, animated: true, completion: nil)
     }
     
     // Color picker
